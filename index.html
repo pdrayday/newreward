@@ -450,6 +450,42 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
   .actions,.cta-actions{flex-direction:column;align-items:stretch}
   .actions .btn,.cta-actions .btn{width:100%;justify-content:center}
 }
+/* ===== conversion sections + infographics ===== */
+.statband{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:center}
+.statband .stat{padding:14px;border:1px solid var(--line-soft);border-radius:16px;background:var(--panel)}
+.statband .num{font-size:clamp(34px,5vw,54px);font-weight:200;color:var(--gold-bright);line-height:1}
+.statband .lbl{font-size:13.5px;color:var(--muted);margin-top:10px;line-height:1.45}
+.fw-row{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;margin-bottom:34px}
+.fw-row:last-child{margin-bottom:0}
+.fw-eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.fw-row h3{font-size:clamp(21px,2.6vw,30px);font-weight:300;margin:10px 0 12px;color:var(--text)}
+.fw-row p{font-size:15px;color:var(--muted);line-height:1.6}
+.fw-art{display:flex;justify-content:center}
+.fw-art svg{width:100%;max-width:280px;height:auto}
+.tier{display:flex;flex-direction:column;text-align:left}
+.tier .tier-ic{width:50px;height:50px;margin-bottom:14px;color:var(--gold)}
+.tier h3{font-size:21px;color:var(--gold-bright);font-weight:400}
+.tier .tier-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);font-weight:600;margin-top:3px;display:block}
+.tier p{font-size:14.5px;margin-top:12px;flex:1;color:var(--muted)}
+.tier .tier-cta{margin-top:18px}
+.tier.featured{box-shadow:0 0 0 1px var(--line),0 34px 80px -44px rgba(238,199,124,.3)}
+.tag-guar{display:inline-block;margin-top:12px;font-size:11px;font-weight:600;color:var(--gold-bright);background:rgba(212,162,74,.1);border:1px solid var(--line);border-radius:999px;padding:5px 11px;line-height:1.3}
+.quote{display:flex;flex-direction:column;gap:12px}
+.quote .stars{color:var(--gold);font-size:13px;letter-spacing:3px}
+.quote p{font-size:15px;font-style:italic;color:var(--text);line-height:1.55;flex:1}
+.quote .who{font-size:13px;color:var(--muted)}
+.quote .who b{color:var(--gold-bright);font-weight:500;font-style:normal}
+.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.metric-row .mc{text-align:center;padding:24px 18px}
+.metric-row .mc b{display:block;font-size:clamp(34px,4.4vw,50px);font-weight:200;color:var(--gold-bright);line-height:1}
+.metric-row .mc span{font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+.funnel{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.funnel .fn{padding:12px 22px;border:1px solid var(--line);border-radius:999px;font-size:15px;color:var(--gold-bright);background:var(--panel)}
+.funnel .fn-arrow{color:var(--gold);font-size:20px}
+.crosslinks{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.crosslinks a{font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line-soft);border-radius:999px;padding:9px 16px;text-decoration:none;transition:color .15s,border-color .15s}
+.crosslinks a:hover{color:var(--gold-bright);border-color:var(--line)}
+@media(max-width:760px){.statband,.metric-row{grid-template-columns:1fr}.fw-row{grid-template-columns:1fr;gap:18px}.fw-row .fw-art{order:-1;max-width:220px;margin-inline:auto}}
 </style>
 </head>
 <body>
@@ -567,6 +603,98 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
       <span class="m-item" aria-hidden="true"><img class="m-logo" src="utlyze.png" alt="Utlyze" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><b style="display:none">Utlyze</b></span>
     </div>
   </div>
+
+  <!-- ===== STAT BAND ===== -->
+  <section class="section" style="padding-block:clamp(38px,6vw,64px)">
+    <div class="wrap">
+      <div class="statband">
+        <div class="stat"><div class="num">~60s</div><div class="lbl">to your free 0–100 visibility score — no card, no call</div></div>
+        <div class="stat"><div class="num">7</div><div class="lbl">surfaces scored: Google + AI Overviews, ChatGPT, Gemini, Claude, Perplexity &amp; Grok</div></div>
+        <div class="stat"><div class="num">30%+</div><div class="lbl">revenue increase guaranteed after the ramp — backed by inspectable proof<sup>*</sup></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM FRAMEWORK ===== -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow" style="justify-content:center">Why most businesses stay invisible</span>
+        <h2>It&#39;s rarely an effort problem.</h2>
+        <p>Audit tools hand you a list and walk away. We score where Google and AI can&#39;t find, trust, or recommend you — then fix it, ship it, and prove what changed.</p>
+      </div>
+      <div class="fw-row">
+        <div><div class="fw-eyebrow">Execution</div><h3>You&#39;re shipping work — not shipping outcomes.</h3><p>Slow content, scattered fixes, no roadmap. Most tools stop at recommendations. We run a full visibility audit, prioritize what moves the answer, then <em>ship the approved fixes</em> and show the evidence.</p></div>
+        <div class="fw-art"><svg viewBox="0 0 220 150" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><rect x="18" y="24" width="78" height="104" rx="10"/><rect x="46" y="16" width="22" height="16" rx="4" fill="var(--gold)" stroke="none"/><line x1="34" y1="54" x2="80" y2="54"/><line x1="34" y1="72" x2="80" y2="72"/><line x1="34" y1="90" x2="66" y2="90"/><path d="M106 76 H150"/><path d="M138 64 L152 76 L138 88"/><circle cx="184" cy="76" r="22"/><path d="M174 76 l7 8 13 -16" stroke="var(--gold-bright)"/></svg></div>
+      </div>
+      <div class="fw-row">
+        <div><div class="fw-eyebrow">Strategy</div><h3>Rankings that don&#39;t convert are just busywork.</h3><p>SEO isn&#39;t a checklist. We tie every move to your bottom line — qualified traffic, booked conversations, and revenue you can attribute — not vanity metrics.</p></div>
+        <div class="fw-art"><svg viewBox="0 0 180 170" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><circle cx="76" cy="94" r="58"/><circle cx="76" cy="94" r="36"/><circle cx="76" cy="94" r="14" fill="var(--gold)" stroke="none"/><path d="M150 26 L84 92"/><path d="M150 26 L150 46 M150 26 L130 26"/></svg></div>
+      </div>
+      <div class="fw-row">
+        <div><div class="fw-eyebrow">Vision</div><h3>Be the answer — across Google <em>and</em> AI.</h3><p>Buyers now start in AI as much as search. We position you to be found, trusted, and recommended on every surface that matters, and keep compounding it month over month.</p></div>
+        <div class="fw-art"><svg viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><circle cx="152" cy="40" r="16" stroke="var(--gold-bright)"/><path d="M14 130 L70 54 L104 100 L140 50 L188 130 Z"/><path d="M140 50 V18 H170 l-10 9 10 9 H140"/></svg></div>
+      </div>
+      <div class="funnel"><span class="fn">Get found</span><span class="fn-arrow">→</span><span class="fn">Get trusted</span><span class="fn-arrow">→</span><span class="fn">Get chosen</span></div>
+      <div class="actions" style="justify-content:center;margin-top:26px"><a class="btn btn-gold btn-lg" href="#">Get your visibility score <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ===== 3-TIER OFFER ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow" style="justify-content:center">Three ways to work with us</span>
+        <h2>Start free. Scale when you&#39;re ready.</h2>
+        <p>Whether you want a free diagnosis or a team that runs the whole loop, there&#39;s an on-ramp for you.</p>
+      </div>
+      <div class="grid g3">
+        <div class="card tier"><svg class="tier-ic" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M10 46 a22 22 0 1 1 44 0"/><path d="M32 46 L46 28"/><circle cx="32" cy="46" r="3.6" fill="currentColor"/></svg><h3>Do it yourself</h3><span class="tier-kicker">Free score</span><p>Not sure why you&#39;re invisible? Get your 0–100 visibility score in ~60 seconds. We show the gaps and a ranked action plan — no card, no call.</p><div class="tier-cta"><a class="btn btn-ghost" href="#">Get your visibility score <span class="arr">→</span></a></div></div>
+        <div class="card tier"><svg class="tier-ic" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 52 C 12 38 52 40 52 26 C 52 16 32 18 32 11" stroke-dasharray="2 7"/><circle cx="12" cy="52" r="4" fill="currentColor"/><path d="M32 9 l-7 5 7 5z" fill="currentColor" stroke="none"/></svg><h3>Do it with us</h3><span class="tier-kicker">Strategy &amp; roadmap</span><p>Bring us your score and goals. On a strategy call we map the highest-ROI moves for your market and hand you a prioritized roadmap to run.</p><div class="tier-cta"><a class="btn btn-ghost" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call <span class="arr">→</span></a></div></div>
+        <div class="card tier featured"><svg class="tier-ic" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6 C 44 16 46 32 40 44 H24 C 18 32 20 16 32 6 Z"/><circle cx="32" cy="26" r="5"/><path d="M24 44 l-8 10 M40 44 l8 10 M28 50 v8 M36 50 v8"/></svg><h3>Done for you</h3><span class="tier-kicker">Full execution</span><p>We run the entire loop — SEO, GEO, content, reviews, distribution, automation, and inspectable reporting — so you focus on the business while we drive growth.</p><span class="tag-guar">At least a 30% revenue increase after the ramp — or we keep working</span><div class="tier-cta"><a class="btn btn-gold" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call <span class="arr">→</span></a></div></div>
+      </div>
+      <p class="reassure" style="text-align:center;margin-top:18px;font-size:12px;color:var(--muted2)"><sup>*</sup>At least a 30% increase in revenue (not leads) after the ramp period of about six months, backed by inspectable proof of attribution.</p>
+    </div>
+  </section>
+
+  <!-- ===== WHAT IT LOOKS LIKE ===== -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="fw-row">
+        <div><span class="eyebrow">What working with us looks like</span><h3 style="margin-top:10px">Score, diagnose, ship, prove — then compound.</h3><p>We run a tight loop: <b style="color:var(--gold-bright)">score</b> your visibility, <b style="color:var(--gold-bright)">diagnose</b> the gaps in ranked order, <b style="color:var(--gold-bright)">ship</b> the fixes, and <b style="color:var(--gold-bright)">prove</b> what changed with inspectable reporting. Done right, organic search and AI visibility compound — so traffic, trust, and revenue keep climbing.</p><div class="actions" style="margin-top:18px"><a class="btn btn-ghost" href="how-it-works.html">See how it works &amp; pricing <span class="arr">→</span></a></div></div>
+        <div class="fw-art"><svg viewBox="0 0 240 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><line x1="26" y1="126" x2="222" y2="126"/><line x1="26" y1="126" x2="26" y2="16"/><rect x="48" y="98" width="26" height="28" fill="rgba(212,162,74,.18)" stroke="none"/><rect x="94" y="80" width="26" height="46" fill="rgba(212,162,74,.26)" stroke="none"/><rect x="140" y="56" width="26" height="70" fill="rgba(212,162,74,.34)" stroke="none"/><rect x="186" y="30" width="26" height="96" fill="rgba(212,162,74,.42)" stroke="none"/><path d="M48 104 Q120 60 212 30" stroke="var(--gold-bright)" stroke-width="3.4"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROOF / CROSSLINKS ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow" style="justify-content:center">Proof you can inspect</span>
+        <h2>Real cases, from their own data.</h2>
+        <p>No one can guarantee AI citations — but we improve your eligibility and prove every result where the source data supports it. Browse case studies by industry, or see everything we run.</p>
+      </div>
+      <div class="crosslinks">
+        <a href="proof.html">Proof &amp; case studies</a>
+        <a href="all-offerings.html">All offerings</a>
+        <a href="how-it-works.html">How it works / Price</a>
+        <a href="why-us.html">Meet the team</a>
+        <a href="pulse.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section alt cta-band">
+    <div class="wrap" style="max-width:760px">
+      <h2>Get chosen before your competitor does.</h2>
+      <p class="lede" style="margin:18px auto 0">Every week you&#39;re invisible in Google and AI answers, a competitor earns the click — and the customer. Start with your free visibility score.</p>
+      <div class="cta-actions">
+        <a class="btn btn-gold btn-lg" href="#">Get your visibility score <span class="arr">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
