@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="dark" />
-<title>FAQ | New Reward</title>
-<meta name="description" content="Short answers on how New Reward works, pricing, timelines, and getting started." />
+<title>Free Visibility Score | New Reward</title>
+<meta name="description" content="Get your free 0–100 visibility score across Google and AI — plus a ranked list of the gaps holding you back. No card, no obligation." />
 <link rel="canonical" href="https://www.newreward.com/" />
 <meta property="og:title" content="Be the brand Google and AI recommend. | New Reward" />
 <meta property="og:description" content="Get found. Get trusted. Get chosen. The AI-visibility platform with proof you can inspect." />
@@ -70,7 +70,7 @@
 [data-theme="ivory"] .btn-gold,[data-theme="ivory"] .btn-gold *,[data-theme="ivory"] .ntable thead .col-us,[data-theme="ivory"] .ntable thead .col-us *{color:var(--cta-ink) !important;-webkit-text-fill-color:var(--cta-ink) !important}
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
 body{
   background:var(--bg); color:var(--text);
   font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -129,16 +129,21 @@ body::before{
 @keyframes twinkle{from{opacity:.45}to{opacity:.95}}
 
 /* ===== client / case marquee ===== */
-.marquee{overflow:hidden;border-block:1px solid var(--line-soft);padding:18px 0;position:relative;z-index:1;
+.marquee{overflow:hidden;border-block:1px solid var(--line-soft);padding:30px 0;position:relative;z-index:1;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.marquee__track{display:flex;gap:46px;width:max-content;animation:scrollx 34s linear infinite}
+.marquee__track{display:flex;gap:60px;width:max-content;animation:scrollx 34s linear infinite}
 .marquee:hover .marquee__track{animation-play-state:paused}
 .m-item{display:inline-flex;align-items:center;gap:11px;color:var(--muted);font-size:16px;font-weight:300;white-space:nowrap}
 .m-item .star{color:var(--gold);font-size:11px}
 .m-item b{color:var(--text);font-weight:400}
 .m-item span{color:var(--muted2);font-size:13px}
+.m-logo{height:84px;width:auto;max-width:400px;object-fit:contain;display:block;padding:12px 24px;background:rgba(255,255,255,.05);border:1px solid var(--line-soft);border-radius:14px}
+.m-logo[src*="solutionstream"]{background:#f1f1f1;border-color:rgba(0,0,0,.1)}
 @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.scroll-cue{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);color:var(--gold);opacity:.8;width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--panel2);box-shadow:var(--shadow);transition:opacity .2s;animation:bobcue 1.8s ease-in-out infinite}
+.scroll-cue:hover{opacity:1}@keyframes bobcue{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@media(prefers-reduced-motion:reduce){.scroll-cue{animation:none}}
 img,svg{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;font-family:inherit}
@@ -229,6 +234,17 @@ em{color:var(--gold-bright);font-style:normal}
 .brand{display:flex;flex-direction:column;gap:3px;line-height:1.04}
 .brand .brand-tag{font-size:11px;font-weight:300;letter-spacing:.04em;color:var(--gold-bright);white-space:nowrap}
 @media(max-width:560px){.brand .brand-tag{display:none}}
+/* landing hero (single screen) */
+.hero--landing{display:flex;align-items:center;min-height:calc(100svh - 232px)}
+.hero-center{max-width:920px;margin-inline:auto;text-align:center;position:relative;z-index:1;transform:translateY(-30px)}
+.hero-center .eyebrow{justify-content:center}
+.hero-center h1{font-weight:200;font-size:clamp(34px,5.4vw,62px);line-height:1.04;max-width:20ch;margin-inline:auto}
+.hero-center h1 b{font-weight:300;color:var(--gold)}
+.hero-center .sub{margin:24px auto 0;max-width:60ch}
+.hero-center .actions{justify-content:center}
+.more-link{margin-top:28px;font-size:13px}
+.more-link a{color:var(--muted);border-bottom:1px dotted var(--gold-deep);padding-bottom:2px;transition:color .15s}
+.more-link a:hover{color:var(--gold-bright)}
 
 /* score card */
 .score-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
@@ -434,6 +450,43 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
   .actions,.cta-actions{flex-direction:column;align-items:stretch}
   .actions .btn,.cta-actions .btn{width:100%;justify-content:center}
 }
+/* ===== conversion sections + infographics ===== */
+.statband{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:center}
+.statband .stat{padding:14px;border:1px solid var(--line-soft);border-radius:16px;background:var(--panel)}
+.statband .num{font-size:clamp(34px,5vw,54px);font-weight:200;color:var(--gold-bright);line-height:1}
+.statband .lbl{font-size:13.5px;color:var(--muted);margin-top:10px;line-height:1.45}
+.fw-row{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;margin-bottom:34px}
+.fw-row:last-child{margin-bottom:0}
+.fw-eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.fw-row h3{font-size:clamp(21px,2.6vw,30px);font-weight:300;margin:10px 0 12px;color:var(--text)}
+.fw-row p{font-size:15px;color:var(--muted);line-height:1.6}
+.fw-art{display:flex;justify-content:center}
+.fw-art svg{width:100%;max-width:280px;height:auto}
+.tier{display:flex;flex-direction:column;text-align:left}
+.tier .tier-ic{width:50px;height:50px;margin-bottom:14px;color:var(--gold)}
+.tier h3{font-size:21px;color:var(--gold-bright);font-weight:400}
+.tier .tier-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);font-weight:600;margin-top:3px;display:block}
+.tier p{font-size:14.5px;margin-top:12px;flex:1;color:var(--muted)}
+.tier .tier-cta{margin-top:18px}
+.tier.featured{box-shadow:0 0 0 1px var(--line),0 34px 80px -44px rgba(238,199,124,.3)}
+.tag-guar{display:inline-block;margin-top:12px;font-size:11px;font-weight:600;color:var(--gold-bright);background:rgba(212,162,74,.1);border:1px solid var(--line);border-radius:999px;padding:5px 11px;line-height:1.3}
+.quote{display:flex;flex-direction:column;gap:12px}
+.quote .stars{color:var(--gold);font-size:13px;letter-spacing:3px}
+.quote p{font-size:15px;font-style:italic;color:var(--text);line-height:1.55;flex:1}
+.quote .who{font-size:13px;color:var(--muted)}
+.quote .who b{color:var(--gold-bright);font-weight:500;font-style:normal}
+.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.metric-row .mc{text-align:center;padding:24px 18px}
+.metric-row .mc b{display:block;font-size:clamp(34px,4.4vw,50px);font-weight:200;color:var(--gold-bright);line-height:1}
+.metric-row .mc span{font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.4}
+.funnel{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.funnel .fn{padding:12px 22px;border:1px solid var(--line);border-radius:999px;font-size:15px;color:var(--gold-bright);background:var(--panel)}
+.funnel .fn-arrow{color:var(--gold);font-size:20px}
+.crosslinks{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.crosslinks a{font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line-soft);border-radius:999px;padding:9px 16px;text-decoration:none;transition:color .15s,border-color .15s}
+.crosslinks a:hover{color:var(--gold-bright);border-color:var(--line)}
+@media(max-width:760px){.statband,.metric-row{grid-template-columns:1fr}.fw-row{grid-template-columns:1fr;gap:18px}.fw-row .fw-art{order:-1;max-width:220px;margin-inline:auto}}
+.tier-other{opacity:.95}.tier-other .tier-ic{color:var(--muted2)}.tier-other h3{color:var(--text)}.cons{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:10px}.cons li{display:flex;gap:9px;font-size:14px;color:var(--muted);line-height:1.42}.cons li::before{content:"✕";color:var(--red);font-weight:700;flex:0 0 auto}
 </style>
 </head>
 <body>
@@ -501,38 +554,52 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 </div>
 
 <main id="main">
-  <!-- ================= FAQ ================= -->
-  <section class="section" id="faq">
+  <section class="hero" style="min-height:auto;padding-top:clamp(30px,5vw,58px);padding-bottom:clamp(28px,4vw,48px)">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Common questions</span>
-        <h2>Short answers, before the call.</h2>
-      </div>
-      <div class="faq">
-        <div class="item"><button class="q">What does New Reward do? <span class="ic"></span></button><div class="a"><div>New Reward scores how your brand shows up in Google and AI answers, ships the approved fixes, and proves what changed with inspectable evidence — one path from visibility gap to shipped work.</div></div></div>
-        <div class="item"><button class="q">What's the difference between SEO and GEO? <span class="ic"></span></button><div class="a"><div>SEO earns rankings in classic Google search. GEO — generative-engine optimization, also called AEO — shapes how AI systems like ChatGPT, Perplexity, Gemini, Claude, and Google's AI Overviews describe and cite your brand. New Reward runs both together.</div></div></div>
-        <div class="item"><button class="q">How is this different from hiring an SEO agency? <span class="ic"></span></button><div class="a"><div>Most agencies hand you a recommendations deck and stop, and most don't measure AI answers at all. We do the diagnosis, ship the fixes, and cover Google and AI visibility together — with proof you can inspect, not a monthly status slide.</div></div></div>
-        <div class="item"><button class="q">How fast will I see results? <span class="ic"></span></button><div class="a"><div>Technical and trust fixes can land in the first few weeks; ranking, citation, and lead movement compounds over the following months as the work accumulates. We show what shipped from day one, so progress is visible before the outcome numbers move.</div></div></div>
-        <div class="item"><button class="q">Do you guarantee #1 rankings? <span class="ic"></span></button><div class="a"><div>No honest partner can guarantee a specific rank or an AI citation — Google and the AI models decide that. What we can do is improve your eligibility to be cited and prove what changed. What we do guarantee is a growth target calibrated to your market footprint and industry — in revenue, not leads — set with you up front, and backed by a money-back guarantee within the growth phase (about three months) if we don&#39;t deliver. Plus the work, the measurement, and inspectable proof. We only claim ranking, lead, or revenue movement when your source data supports it.</div></div></div>
-        <div class="item"><button class="q">How does pricing work? <span class="ic"></span></button><div class="a"><div>A fixed monthly fee covers the program, plus a share of new, attributable revenue — growth above your baseline today, beginning once tracking is live. If we don't move the number, we don't earn the share — so it's a true win-win, with our incentives tied to your growth. Build a quote in about two minutes with our calculator.</div></div></div>
-        <div class="item"><button class="q">What do you need from me to start? <span class="ic"></span></button><div class="a"><div>Access to your site, analytics, and the profiles we'll work on (Google Business, listings, review platforms). We confirm each connection before claiming anything is live, and you approve work before it ships.</div></div></div>
-        <div class="item"><button class="q">Do I have to sign a long contract? <span class="ic"></span></button><div class="a"><div>No — there are no contracts, period. We do ask that you stay with us for at least 6 months, because SEO and GEO compound over time and the results need that runway to show up.</div></div></div>
-        <div class="item"><button class="q">Can we start with one thing instead of everything? <span class="ic"></span></button><div class="a"><div>Yes. We’ll recommend the services that fit — and steer you away from the ones that don’t — based on your needs, budget, market, and industry, then expand as results come in.</div></div></div>
-      </div>
-          <div class="actions sec-cta" style="justify-content:center;margin-top:20px"><a class="btn btn-gold" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call <span class="arr">→</span></a></div>
-      </div>
-  </section>
-  <section class="section alt cta-band" id="score">
-    <div class="wrap" style="max-width:760px">
-      <h2>Improve your visibility before your competitor does.</h2>
-      <p class="lede" style="margin:18px auto 0">Every week you’re invisible in Google and AI answers, a competitor earns the click — and the customer. Turn organic search and GEO into compounding ROI, starting with your free score.</p>
-      <div class="cta-actions">
-        <a class="btn btn-gold btn-lg" href="score.html">Get your visibility score <span class="arr">→</span></a>
-        <a class="btn btn-ghost btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call</a>
+      <div class="grid g2" style="align-items:center;gap:48px">
+        <div>
+          <span class="eyebrow">Free visibility score</span>
+          <h1 style="font-size:clamp(34px,5vw,56px);font-weight:200;line-height:1.05;margin-top:14px">See exactly where Google and AI can&#39;t find you.</h1>
+          <p class="sub" style="margin-top:18px;max-width:54ch">Get your 0–100 visibility score across Google and the major AI engines — plus a ranked list of the gaps holding you back and the one move to start with. No card, no obligation.</p>
+          <div class="actions" style="margin-top:26px"><a class="btn btn-gold btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Get your free visibility score <span class="arr">→</span></a></div>
+          <p class="reassure" style="margin-top:12px">We run it on your real site · no commitment · no card.</p>
+        </div>
+        <div class="fw-art"><svg viewBox="0 0 240 168" fill="none" stroke="currentColor" stroke-linecap="round" style="color:var(--gold);width:100%;max-width:300px"><path d="M30 142 A90 90 0 0 1 210 142" stroke="var(--line-soft)" stroke-width="14"/><path d="M30 142 A90 90 0 0 1 173 59" stroke="var(--gold)" stroke-width="14"/><line x1="120" y1="142" x2="168" y2="72" stroke="var(--gold-bright)" stroke-width="4"/><circle cx="120" cy="142" r="7" fill="var(--gold-bright)" stroke="none"/><text x="120" y="120" text-anchor="middle" font-size="46" font-weight="300" fill="var(--gold-bright)" font-family="Inter,Arial" stroke="none">?</text><text x="120" y="158" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="Inter,Arial" letter-spacing="2" stroke="none">0–100</text></svg></div>
       </div>
     </div>
   </section>
 
+  <section class="section alt">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow" style="justify-content:center">What you get</span><h2>A clear picture — and a plan.</h2><p>No vanity metrics. Just where you stand, what&#39;s costing you, and what to do next.</p></div>
+      <div class="grid g3">
+        <div class="card"><div style="font-size:12px;letter-spacing:.18em;color:var(--gold);font-weight:700">01</div><h3 style="color:var(--gold-bright);margin-top:8px;font-size:20px">Your visibility score</h3><p style="color:var(--muted);margin-top:9px;font-size:14.5px">One 0–100 number for how findable, trusted, and recommended you are across Google + AI Overviews, ChatGPT, Gemini, Claude, Perplexity &amp; Grok.</p></div>
+        <div class="card"><div style="font-size:12px;letter-spacing:.18em;color:var(--gold);font-weight:700">02</div><h3 style="color:var(--gold-bright);margin-top:8px;font-size:20px">The ranked gaps</h3><p style="color:var(--muted);margin-top:9px;font-size:14.5px">Exactly where you&#39;re losing visibility — technical, content, entity, and trust signals — prioritized by impact, not guesswork.</p></div>
+        <div class="card"><div style="font-size:12px;letter-spacing:.18em;color:var(--gold);font-weight:700">03</div><h3 style="color:var(--gold-bright);margin-top:8px;font-size:20px">Your next move</h3><p style="color:var(--muted);margin-top:9px;font-size:14.5px">The single highest-leverage fix to start with — and what it looks like when organic search and AI visibility compound month over month.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head center"><span class="eyebrow" style="justify-content:center">Why it matters</span><h2>Buyers decide before they ever reach you.</h2><p>They search Google and ask AI — and pick from what those surfaces recommend. If you&#39;re not the answer, a competitor is. Your score shows the gap while you can still close it.</p></div>
+      <div class="funnel"><span class="fn">Get found</span><span class="fn-arrow">→</span><span class="fn">Get trusted</span><span class="fn-arrow">→</span><span class="fn">Get chosen</span></div>
+      <div class="crosslinks" style="margin-top:26px">
+        <a href="proof.html">Proof &amp; case studies</a><a href="all-offerings.html">All offerings</a><a href="how-it-works.html">How it works / Price</a><a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt cta-band">
+    <div class="wrap" style="max-width:760px">
+      <h2>Know your number. Then close the gap.</h2>
+      <p class="lede" style="margin:18px auto 0">It&#39;s free, it&#39;s fast, and there&#39;s no obligation. See exactly where you stand across Google and AI today.</p>
+      <div class="cta-actions">
+        <a class="btn btn-gold btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Get your free visibility score <span class="arr">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -543,7 +610,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
         <a class="wordmark" href="index.html">New <span>Reward</span></a>
         <p class="f-blurb">SEO, GEO, content distribution, ads, reviews, lead response, automation, and proof reporting for brands that need to stay visible in Google, AI answers, and the channels buyers inspect.</p>
       </div>
-      <div class="f-col"><h4>Platform</h4><a href="how-it-works.html">How it works/Price</a><a href="all-offerings.html">Offerings</a><a href="why-us.html">Meet us</a><a href="all-offerings.html">All offerings</a><a href="price.html">Price</a><a href="#">Appointments</a></div>
+      <div class="f-col"><h4>Platform</h4><a href="how-it-works.html">How it works/Price</a><a href="all-offerings.html">Offerings</a><a href="why-us.html">Meet us</a><a href="all-offerings.html">All Services</a><a href="#">Appointments</a></div>
       <div class="f-col"><h4>Proof</h4><a href="proof.html">Case studies</a><a href="all-offerings.html">Industries</a><a href="#">Trust &amp; proof</a><a href="#">Updates</a></div>
       <div class="f-col"><h4>Editorial</h4><a href="pulse.html">Blog</a><a href="#">Field guide</a><a href="podcast.html">Podcast</a><a href="faq.html">FAQ</a></div>
       <div class="f-col"><h4>Company</h4><a href="#">About</a><a href="#">Leadership</a><a href="#">Team</a><a href="#">Contact</a></div>
@@ -557,7 +624,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 
 <div class="mobile-cta">
   <a class="btn btn-ghost btn-block" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Demo</a>
-  <a class="btn btn-gold btn-block" href="#">Get your score</a>
+  <a class="btn btn-gold btn-block" href="#score">Get your score</a>
 </div>
 
 <div class="theme-switch" role="group" aria-label="Preview theme">
@@ -697,5 +764,6 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
   resize(); reduce?stat():frame();
 })();
 </script>
+<script>(function(){var cs=[].slice.call(document.querySelectorAll(".scroll-cue"));if(!cs.length)return;function f(){cs.forEach(function(c){var s=c.closest("section");if(!s)return;var hide=s.getBoundingClientRect().bottom<window.innerHeight*0.6;c.style.opacity=hide?"0":"";c.style.pointerEvents=hide?"none":"";});}window.addEventListener("scroll",f,{passive:true});window.addEventListener("resize",f,{passive:true});f();})();</script>
 </body>
 </html>
