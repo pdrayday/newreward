@@ -143,6 +143,7 @@ body::before{
 .scroll-cue:hover{opacity:1}@keyframes bobcue{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 @media(prefers-reduced-motion:reduce){.scroll-cue{animation:none}}
 @media(max-width:760px){.scroll-cue{display:none}}
+@media(max-height:760px){.scroll-cue{display:none!important}}
 img,svg{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;font-family:inherit}
@@ -512,7 +513,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
     <div class="wrap" style="text-align:center;max-width:840px">
       <span class="eyebrow" style="justify-content:center">Podcast</span>
       <h1 style="font-size:clamp(32px,4.6vw,54px);font-weight:200;max-width:20ch;margin-inline:auto">Commentary from the team.</h1>
-      <p class="sub" style="margin:20px auto 0;max-width:58ch">Conversations from the New Reward team on getting found and recommended by Google and AI — new episodes publish as they go live.</p>
+      <p class="sub" style="margin:20px auto 0;max-width:58ch">Conversations on getting found and recommended by Google and AI.</p>
       <div class="actions" style="justify-content:center"><a class="btn btn-gold btn-lg" href="https://www.youtube.com/@NewRewardAI" target="_blank" rel="noopener">Watch on YouTube <span class="arr">→</span></a><a class="btn btn-ghost btn-lg" href="https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo" target="_blank" rel="noopener">Book a strategy call</a></div>
     </div>
     <a class="scroll-cue" href="#videos" aria-label="Watch the videos"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
