@@ -56,7 +56,10 @@
       <tspan x="74" dy="76">recommend.</tspan>
     </text>
     <text x="78" y="414" font-size="30" font-weight="700" fill="#f4d28a">Get found. Get trusted. Get chosen.</text>
-    <text x="78" y="460" class="body" fill="#d7d0bd">and show you weekly improvements</text>
+    <text x="78" y="460" class="body" fill="#d7d0bd">
+      <tspan x="78" dy="0">We find the visibility gaps, fix them,</tspan>
+      <tspan x="78" dy="36">and show you weekly improvements.</tspan>
+    </text>
     <g transform="translate(78 538)">
       <rect width="300" height="54" rx="27" fill="#d4a24a"/>
       <text x="26" y="35" font-size="19" font-weight="800" fill="#151006">Get your free score</text>
