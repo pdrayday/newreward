@@ -488,6 +488,26 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 .crosslinks a:hover{color:var(--gold-bright);border-color:var(--line)}
 @media(max-width:760px){.statband,.metric-row{grid-template-columns:1fr}.fw-row{grid-template-columns:1fr;gap:18px}.fw-row .fw-art{order:-1;max-width:220px;margin-inline:auto}}
 .tier-other{opacity:.95}.tier-other .tier-ic{color:var(--muted2)}.tier-other h3{color:var(--text)}.cons{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:10px}.cons li{display:flex;gap:9px;font-size:14px;color:var(--muted);line-height:1.42}.cons li::before{content:"✕";color:var(--red);font-weight:700;flex:0 0 auto}
+/* ===== "how much are you losing" reel ===== */
+.reel{position:relative;overflow:hidden;background:#06070c;min-height:clamp(360px,60vh,540px);display:flex;align-items:center;justify-content:center;text-align:center;border-block:1px solid var(--line-soft)}
+.reel::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,162,74,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(212,162,74,.07) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 78% 78% at 50% 50%,#000 22%,transparent 80%);mask-image:radial-gradient(ellipse 78% 78% at 50% 50%,#000 22%,transparent 80%)}
+.reel::after{content:"";position:absolute;inset:0;background:radial-gradient(58% 50% at 50% 44%,rgba(238,199,124,.1),transparent 70%);animation:reelGlow 5s ease-in-out infinite alternate;pointer-events:none}
+@keyframes reelGlow{from{opacity:.45}to{opacity:1}}
+.reel .rl-inner{position:relative;z-index:1;padding:0 24px;max-width:940px}
+.reel h2{font-size:clamp(42px,8.6vw,104px);font-weight:800;line-height:.96;letter-spacing:-.02em;color:#fff;margin:0;max-width:none}
+.reel h2 .you{color:var(--gold-bright)}
+.reel .rl-sub{font-size:clamp(19px,3.4vw,34px);font-weight:600;color:#7d7565;margin-top:16px}
+.reel .rl-cta{margin-top:30px}
+.reel .rl-cta .btn-gold{background:linear-gradient(135deg,#eec77c,#c08c34);color:#1a1305}
+.reel .rl-line{opacity:0}
+.reel.in .rl-line{animation:reelUp .9s cubic-bezier(.2,.75,.2,1) both}
+.reel.in .rl-2{animation-delay:.5s}.reel.in .rl-3{animation-delay:1s}.reel.in .rl-4{animation-delay:1.45s}
+@keyframes reelUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+[data-theme="ivory"] .reel h2,[data-theme="ivory"] .reel .rl-line{color:#fff!important;-webkit-text-fill-color:#fff!important}
+[data-theme="ivory"] .reel h2 .you{color:#eec77c!important;-webkit-text-fill-color:#eec77c!important}
+[data-theme="ivory"] .reel .rl-sub{color:#8a8170!important;-webkit-text-fill-color:#8a8170!important}
+[data-theme="ivory"] .reel .rl-cta .btn-gold,[data-theme="ivory"] .reel .rl-cta .btn-gold *{color:#1a1305!important;-webkit-text-fill-color:#1a1305!important}
+@media(prefers-reduced-motion:reduce){.reel .rl-line{opacity:1!important;animation:none!important}.reel::after{animation:none}}
 </style>
 </head>
 <body>
@@ -605,6 +625,15 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
       <span class="m-item" aria-hidden="true"><img class="m-logo" src="utlyze.png" alt="Utlyze" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><b style="display:none">Utlyze</b></span>
     </div>
   </div>
+
+  <!-- ===== "HOW MUCH ARE YOU LOSING" REEL ===== -->
+  <section class="reel" aria-label="How much are you losing?">
+    <div class="rl-inner">
+      <h2><span class="rl-line rl-1">How much are</span><br><span class="rl-line rl-2"><span class="you">you</span> losing?</span></h2>
+      <p class="rl-sub rl-line rl-3">Find out in 60 seconds.</p>
+      <div class="rl-cta rl-line rl-4"><a class="btn btn-gold btn-lg" href="score.html">Get your free score <span class="arr">→</span></a></div>
+    </div>
+  </section>
 
   <!-- ===== STAT BAND ===== -->
   <section class="section" style="padding-block:clamp(38px,6vw,64px)">
@@ -852,5 +881,6 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 })();
 </script>
 <script>(function(){var cs=[].slice.call(document.querySelectorAll(".scroll-cue"));if(!cs.length)return;function f(){cs.forEach(function(c){var s=c.closest("section");if(!s)return;var hide=s.getBoundingClientRect().bottom<window.innerHeight*0.6;c.style.opacity=hide?"0":"";c.style.pointerEvents=hide?"none":"";});}window.addEventListener("scroll",f,{passive:true});window.addEventListener("resize",f,{passive:true});f();})();</script>
+<script>(function(){var r=document.querySelector(".reel");if(!r)return;if(!("IntersectionObserver" in window)){r.classList.add("in");return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){r.classList.add("in");io.disconnect();}});},{threshold:.25});io.observe(r);})();</script>
 </body>
 </html>
