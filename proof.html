@@ -7,24 +7,9 @@
 <title>Proof | New Reward</title>
 <meta name="description" content="Real cases from their own data, and the team behind the work." />
 <link rel="canonical" href="https://www.newreward.com/" />
-
-<meta property="og:title" content="Be the brand Google and AI recommend | New Reward" />
-<meta property="og:description" content="Get found, trusted, and chosen across Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and Grok. We find the visibility gaps, fix them, and show you weekly improvements." />
+<meta property="og:title" content="Be the brand Google and AI recommend. | New Reward" />
+<meta property="og:description" content="Get found. Get trusted. Get chosen. The AI-visibility platform with proof you can inspect." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://pdrayday.github.io/newreward/proof.html" />
-<meta property="og:site_name" content="New Reward" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:image" content="https://pdrayday.github.io/newreward/assets/og-newreward-preview.png" />
-<meta property="og:image:secure_url" content="https://pdrayday.github.io/newreward/assets/og-newreward-preview.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="New Reward preview showing Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and Grok visibility." />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Be the brand Google and AI recommend | New Reward" />
-<meta name="twitter:description" content="Get found, trusted, and chosen across Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and Grok. We find the visibility gaps, fix them, and show you weekly improvements." />
-<meta name="twitter:image" content="https://pdrayday.github.io/newreward/assets/og-newreward-preview.png" />
-<meta name="twitter:image:alt" content="New Reward preview showing Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and Grok visibility." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -211,7 +196,7 @@ em{color:var(--gold-bright);font-style:normal}
 .wordmark{font-size:23px;font-weight:300;letter-spacing:.01em;color:var(--text);white-space:nowrap}
 .wordmark span{color:#bf953a;font-weight:400}
 .nav{display:flex;gap:28px;margin-inline:auto}
-.nav a{font-size:13.5px;font-weight:400;color:var(--muted);transition:color .15s}
+.nav a{font-size:13.5px;font-weight:400;color:var(--muted);transition:color .15s;position:relative}.nav a:not(:last-child)::after{content:"";position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:1px;height:13px;background:var(--line)}
 .nav a:hover{color:var(--text)}
 .hdr-cta{display:flex;align-items:center;gap:12px}
 .hdr-cta .btn{padding:11px 22px}
@@ -249,7 +234,7 @@ em{color:var(--gold-bright);font-style:normal}
 /* brand block (logo + tagline) */
 .brand{display:flex;flex-direction:column;gap:3px;line-height:1.04}
 .brand .brand-tag{font-size:11px;font-weight:300;letter-spacing:.04em;color:var(--gold-bright);white-space:nowrap}
-@media(max-width:560px){.brand .brand-tag{display:none}}
+
 
 /* score card */
 .score-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
@@ -443,7 +428,8 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
   .hero,.section{padding-top:clamp(34px,8vw,54px)!important;padding-bottom:clamp(34px,8vw,54px)!important}
   .wrap,.hero-center{transform:none!important}
   .scroll-cue{display:none!important}
-  .brand-tag{display:none}
+  .brand{flex-direction:row;align-items:baseline;gap:8px}
+  .brand .brand-tag{display:block;font-size:9.5px;white-space:normal;max-width:46vw;line-height:1.15}
   .hdr-cta{display:none}
   .hdr{gap:14px}
   body{overflow-x:clip}

@@ -1,0 +1,28 @@
+# New Reward
+
+> New Reward is an AI-visibility agency that gets your business found, trusted, and recommended across Google Search and the major AI engines (Google AI Overviews, ChatGPT, Gemini, Claude, Perplexity, Grok). We find the gaps, fix them, and show you weekly improvements — with proof you can inspect.
+
+## What we do
+- SEO and GEO (generative-engine optimization, also called AEO / answer-engine optimization)
+- Content and intent mapping, CMS and syndication
+- Reviews and reputation, distribution and lead response
+- Paid advertising, AI automation, and inspectable reporting
+
+## How it works
+We score your visibility (0–100) across Google and AI, diagnose the ranked gaps, fix the highest-impact issues, and show weekly improvements. Pricing is a fixed monthly fee plus a share of new, attributable revenue above your baseline.
+
+## Guarantee
+A growth target calibrated to your market footprint and industry — measured in revenue (not leads), backed by inspectable proof of attribution.
+
+## Key pages
+- Home: https://pdrayday.github.io/newreward/
+- What we do (how it works and pricing): https://pdrayday.github.io/newreward/how-it-works.html
+- Free visibility score: https://pdrayday.github.io/newreward/score.html
+- Who we help (proof and case studies by industry): https://pdrayday.github.io/newreward/proof.html
+- All offerings: https://pdrayday.github.io/newreward/all-offerings.html
+- Who we are (team): https://pdrayday.github.io/newreward/why-us.html
+- FAQ: https://pdrayday.github.io/newreward/faq.html
+- Blog: https://pdrayday.github.io/newreward/pulse.html
+
+## Contact
+Book a strategy call: https://api.leadconnectorhq.com/widget/bookings/new-reward-seogeo-demo
