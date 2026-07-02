@@ -474,6 +474,26 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 [data-theme="ivory"] .adx-mut{color:#5e4108!important;-webkit-text-fill-color:#5e4108!important}
 [data-theme="ivory"] .adx-cta .btn-gold,[data-theme="ivory"] .adx-cta .btn-gold *{color:#1a1305!important;-webkit-text-fill-color:#1a1305!important}
 @media(prefers-reduced-motion:reduce){.adx-slide{transition:none}}
+
+/* ===== adx calculator layout ===== */
+.adx-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.adx-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.adx-stage{min-height:clamp(540px,66vh,640px)}
+@media(max-width:560px){.adx-stage{min-height:660px}}
+.adx-ind{font-size:clamp(28px,4.6vw,56px)}
+.adx-num{font-size:clamp(42px,7vw,86px);margin:2px 0}
+.adx-grid{display:grid;grid-template-columns:repeat(2,minmax(150px,230px));gap:12px;justify-content:center;margin:18px 0 4px;width:100%}
+.adx-cell{background:rgba(255,255,255,.03);border:1px solid var(--line-soft);border-radius:12px;padding:12px 16px;text-align:center}
+.adx-lab{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#7d7565;font-weight:600}
+.adx-v{display:block;font-size:clamp(24px,3.2vw,38px);font-weight:800;line-height:1.1;margin-top:4px}
+.v-gold{color:var(--gold-bright)}.v-deep{color:var(--gold)}.v-green{color:var(--green)}
+.adx-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 8px}
+.adx-chips span{font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line-soft);border-radius:999px;padding:5px 12px;display:inline-flex;align-items:center;gap:6px}
+.adx-chips span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.adx-cap{font-size:12px;color:#7d7565;margin-top:8px}
+[data-theme="ivory"] .v-gold,[data-theme="ivory"] .v-deep{color:#5e3a12!important;-webkit-text-fill-color:#5e3a12!important}
+[data-theme="ivory"] .v-green{color:#1f5a2c!important;-webkit-text-fill-color:#1f5a2c!important}
+[data-theme="ivory"] .adx-lab,[data-theme="ivory"] .adx-cap{color:#5e4108!important;-webkit-text-fill-color:#5e4108!important}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Case Studies & Proof — SEO/GEO Results | New Reward", "url": "https://pdrayday.github.io/newreward/proof.html", "description": "Real client cases from New Reward — AI visibility, SEO and GEO results measured from each client's own data, by industry.", "isPartOf": {"@type": "WebSite", "name": "New Reward", "url": "https://pdrayday.github.io/newreward/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pdrayday.github.io/newreward/"}, {"@type": "ListItem", "position": 2, "name": "Proof & Case Studies", "item": "https://pdrayday.github.io/newreward/proof.html"}]}]}
@@ -586,17 +606,122 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
     <a class="scroll-cue" href="#score" aria-label="More below"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
   </section>
   <!-- ===== AD-STYLE INDUSTRY REEL ===== -->
-  <section class="adx" aria-label="How much is your industry leaving on the table?">
+  <section class="adx" aria-label="Lost revenue calculator by industry">
     <div class="adx-wrap">
+      <span class="adx-eyebrow">Lost revenue calculator</span>
       <div class="adx-stage">
-      <div class="adx-slide active"><div class="adx-mut">The average</div><div class="adx-ind">Dental practice</div><div class="adx-mut">leaves</div><div class="adx-num">$296,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Law firm</div><div class="adx-mut">leaves</div><div class="adx-num">$438,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Landscaping company</div><div class="adx-mut">leaves</div><div class="adx-num">$124,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Electrician</div><div class="adx-mut">leaves</div><div class="adx-num">$142,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Solar installer</div><div class="adx-mut">leaves</div><div class="adx-num">$385,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Veterinary clinic</div><div class="adx-mut">leaves</div><div class="adx-num">$167,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">IT services firm</div><div class="adx-mut">leaves</div><div class="adx-num">$329,000</div><div class="adx-mut">on the table every year.</div></div>
-      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Real estate team</div><div class="adx-mut">leaves</div><div class="adx-num">$232,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide active">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Dental practice</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="52">52</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$2.4K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="58" data-suffix="%">58%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="42" data-suffix="%">42%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="296000" data-prefix="$">$296,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Law firm</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="38">38</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$9.5K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="54" data-suffix="%">54%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="31" data-suffix="%">31%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="438000" data-prefix="$">$438,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Landscaping company</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="41">41</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$1.8K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="60" data-suffix="%">60%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="45" data-suffix="%">45%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="124000" data-prefix="$">$124,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Electrician</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="47">47</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$1.5K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="63" data-suffix="%">63%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="48" data-suffix="%">48%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="142000" data-prefix="$">$142,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Solar installer</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="29">29</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$24K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="52" data-suffix="%">52%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="28" data-suffix="%">28%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="385000" data-prefix="$">$385,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Veterinary clinic</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="58">58</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$850</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="66" data-suffix="%">66%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="52" data-suffix="%">52%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="167000" data-prefix="$">$167,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">IT services firm</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="22">22</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$18K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="49" data-suffix="%">49%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="30" data-suffix="%">30%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="329000" data-prefix="$">$329,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
+      <div class="adx-slide">
+        <div class="adx-mut">The average</div>
+        <div class="adx-ind">Real estate team</div>
+        <div class="adx-grid">
+          <div class="adx-cell"><span class="adx-lab">Monthly leads</span><b class="adx-v v-gold" data-count="44">44</b></div>
+          <div class="adx-cell"><span class="adx-lab">Avg ticket size</span><b class="adx-v v-deep">$8.2K</b></div>
+          <div class="adx-cell"><span class="adx-lab">Appt set rate</span><b class="adx-v v-green" data-count="57" data-suffix="%">57%</b></div>
+          <div class="adx-cell"><span class="adx-lab">Close rate</span><b class="adx-v v-green" data-count="34" data-suffix="%">34%</b></div>
+        </div>
+        <div class="adx-chips"><span>Google LSA</span><span>Phone calls</span><span>Website forms</span><span>Lead aggregators</span><span>Referrals</span></div>
+        <div class="adx-lab" style="margin-top:10px;font-size:12px">Revenue lost per year</div>
+        <div class="adx-num" data-count="232000" data-prefix="$">$232,000</div>
+        <div class="adx-cap">Estimated from typical inputs and lead sources for this industry.</div>
+      </div>
       </div>
       <div class="adx-cta"><a class="btn btn-gold btn-lg" href="score.html">Learn more <span class="arr">&rarr;</span></a></div>
     </div>
@@ -778,6 +903,16 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 })();
 </script>
 <script>(function(){var cs=[].slice.call(document.querySelectorAll(".scroll-cue"));if(!cs.length)return;function f(){var vh=window.innerHeight,mid=vh*0.5,active=null;cs.forEach(function(c){var s=c.closest("section");if(!s)return;var r=s.getBoundingClientRect();if(r.top<=mid&&r.bottom>=mid)active=c;});cs.forEach(function(c){var on=(c===active);c.style.opacity=on?"":"0";c.style.pointerEvents=on?"":"none";});}window.addEventListener("scroll",f,{passive:true});window.addEventListener("resize",f,{passive:true});f();})();</script>
-<script>(function(){var s=[].slice.call(document.querySelectorAll(".adx-slide"));if(s.length<2)return;if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;var i=0;setInterval(function(){s[i].classList.remove("active");i=(i+1)%s.length;s[i].classList.add("active");},4600);})();</script>
+<script>(function(){var slides=[].slice.call(document.querySelectorAll(".adx-slide"));if(!slides.length)return;
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+function countUp(sl){if(reduce)return;[].slice.call(sl.querySelectorAll("[data-count]")).forEach(function(el){
+var t=parseInt(el.dataset.count,10),pre=el.dataset.prefix||"",suf=el.dataset.suffix||"",steps=22,i=0;
+var iv=setInterval(function(){i++;var v=Math.round(t*i/steps);if(i>=steps){v=t;clearInterval(iv);}
+el.textContent=pre+v.toLocaleString("en-US")+suf;},28);});}
+var idx=0,started=false,stage=document.querySelector(".adx-stage");
+if(stage&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){
+if(e.isIntersecting&&!started){started=true;countUp(slides[0]);io.disconnect();}});},{threshold:.35});io.observe(stage);}
+if(!reduce&&slides.length>1){setInterval(function(){slides[idx].classList.remove("active");idx=(idx+1)%slides.length;
+slides[idx].classList.add("active");countUp(slides[idx]);},5200);}})();</script>
 </body>
 </html>
