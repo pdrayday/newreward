@@ -454,6 +454,26 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
   .actions,.cta-actions{flex-direction:column;align-items:stretch}
   .actions .btn,.cta-actions .btn{width:100%;justify-content:center}
 }
+
+/* ===== ad-style industry reel (Who we help) ===== */
+.adx{position:relative;overflow:hidden;background:#06070c;border-block:1px solid var(--line-soft);text-align:center}
+[data-theme="ivory"] .adx{background:#c7a455}
+.adx::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,162,74,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(212,162,74,.07) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 85% 92% at 50% 50%,#000 30%,transparent 85%);mask-image:radial-gradient(ellipse 85% 92% at 50% 50%,#000 30%,transparent 85%)}
+[data-theme="ivory"] .adx::before{background-image:linear-gradient(rgba(0,0,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.08) 1px,transparent 1px)}
+.adx-wrap{position:relative;z-index:1;max-width:880px;margin-inline:auto;padding:clamp(56px,8vw,96px) 28px}
+.adx-stage{position:relative;min-height:clamp(320px,42vh,440px)}
+.adx-slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.adx-slide.active{opacity:1;transform:translateY(0)}
+.adx-mut{font-size:clamp(20px,2.8vw,32px);font-weight:600;color:#7d7565}
+.adx-ind{font-size:clamp(36px,6.6vw,80px);font-weight:800;line-height:.95;letter-spacing:-.01em;color:var(--gold-bright);text-transform:uppercase;max-width:14ch}
+.adx-num{font-size:clamp(52px,9vw,110px);font-weight:800;line-height:1;letter-spacing:-.02em;color:#e0564a;margin:6px 0}
+.adx-cta{margin-top:clamp(22px,3vw,32px)}
+.adx-cta .btn{min-width:min(420px,84vw);justify-content:center}
+[data-theme="ivory"] .adx-ind{color:#5e3a12!important;-webkit-text-fill-color:#5e3a12!important}
+[data-theme="ivory"] .adx-num{color:#9a2b18!important;-webkit-text-fill-color:#9a2b18!important}
+[data-theme="ivory"] .adx-mut{color:#5e4108!important;-webkit-text-fill-color:#5e4108!important}
+[data-theme="ivory"] .adx-cta .btn-gold,[data-theme="ivory"] .adx-cta .btn-gold *{color:#1a1305!important;-webkit-text-fill-color:#1a1305!important}
+@media(prefers-reduced-motion:reduce){.adx-slide{transition:none}}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Case Studies & Proof — SEO/GEO Results | New Reward", "url": "https://pdrayday.github.io/newreward/proof.html", "description": "Real client cases from New Reward — AI visibility, SEO and GEO results measured from each client's own data, by industry.", "isPartOf": {"@type": "WebSite", "name": "New Reward", "url": "https://pdrayday.github.io/newreward/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pdrayday.github.io/newreward/"}, {"@type": "ListItem", "position": 2, "name": "Proof & Case Studies", "item": "https://pdrayday.github.io/newreward/proof.html"}]}]}
@@ -565,6 +585,23 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
       </div>
     <a class="scroll-cue" href="#score" aria-label="More below"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
   </section>
+  <!-- ===== AD-STYLE INDUSTRY REEL ===== -->
+  <section class="adx" aria-label="How much is your industry leaving on the table?">
+    <div class="adx-wrap">
+      <div class="adx-stage">
+      <div class="adx-slide active"><div class="adx-mut">The average</div><div class="adx-ind">Roofing company</div><div class="adx-mut">leaves</div><div class="adx-num">$248,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">HVAC company</div><div class="adx-mut">leaves</div><div class="adx-num">$184,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Med spa</div><div class="adx-mut">leaves</div><div class="adx-num">$327,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Personal-injury firm</div><div class="adx-mut">leaves</div><div class="adx-num">$720,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Plumbing company</div><div class="adx-mut">leaves</div><div class="adx-num">$176,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Supplements brand</div><div class="adx-mut">leaves</div><div class="adx-num">$271,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Fintech SaaS</div><div class="adx-mut">leaves</div><div class="adx-num">$640,000</div><div class="adx-mut">on the table every year.</div></div>
+      <div class="adx-slide"><div class="adx-mut">The average</div><div class="adx-ind">Auto-repair shop</div><div class="adx-mut">leaves</div><div class="adx-num">$108,000</div><div class="adx-mut">on the table every year.</div></div>
+      </div>
+      <div class="adx-cta"><a class="btn btn-gold btn-lg" href="score.html">Learn more <span class="arr">&rarr;</span></a></div>
+    </div>
+  </section>
+
   <section class="section alt cta-band" id="score" style="scroll-margin-top:74px">
     <div class="wrap" style="max-width:760px">
       <h2>Improve your visibility before your competitor does.</h2>
@@ -741,5 +778,6 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 })();
 </script>
 <script>(function(){var cs=[].slice.call(document.querySelectorAll(".scroll-cue"));if(!cs.length)return;function f(){var vh=window.innerHeight,mid=vh*0.5,active=null;cs.forEach(function(c){var s=c.closest("section");if(!s)return;var r=s.getBoundingClientRect();if(r.top<=mid&&r.bottom>=mid)active=c;});cs.forEach(function(c){var on=(c===active);c.style.opacity=on?"":"0";c.style.pointerEvents=on?"":"none";});}window.addEventListener("scroll",f,{passive:true});window.addEventListener("resize",f,{passive:true});f();})();</script>
+<script>(function(){var s=[].slice.call(document.querySelectorAll(".adx-slide"));if(s.length<2)return;if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;var i=0;setInterval(function(){s[i].classList.remove("active");i=(i+1)%s.length;s[i].classList.add("active");},4600);})();</script>
 </body>
 </html>
