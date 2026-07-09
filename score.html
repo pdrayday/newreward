@@ -46,20 +46,20 @@
   --glow1:rgba(238,199,124,.16); --glow2:rgba(212,162,74,.05);
   --shadow:0 40px 90px -40px rgba(0,0,0,.9);
 }
-[data-theme="ivory"]{color-scheme:dark;
-  --bg:#dcbc7f; --panel:#e2c78e; --panel2:#d4b264; --field:#e2c78e;
-  --gold:#1a1206; --gold-bright:#3a2a0b; --gold-deep:#2a1f08;
-  --line:rgba(0,0,0,.22); --line-soft:rgba(0,0,0,.12);
-  --text:#161003; --muted:#161003; --muted2:#2a2208;
-  --green:#1f5a2c; --red:#7a2418;
-  --cta:linear-gradient(135deg,#241a06,#0c0802); --cta-ink:#f0d8a0;
-  --header-bg:rgba(220,188,127,.9);
-  --glow1:rgba(0,0,0,.04); --glow2:rgba(0,0,0,.02);
-  --shadow:0 24px 50px -28px rgba(60,40,5,.45);
+[data-theme="ivory"]{color-scheme:light;
+  --bg:#ffffff; --panel:#faf7f0; --panel2:#f3edde; --field:#faf7f0;
+  --gold:#a67c28; --gold-bright:#8a6410; --gold-deep:#c2a052;
+  --line:rgba(166,124,40,.38); --line-soft:rgba(166,124,40,.16);
+  --text:#14100a; --muted:#5b5344; --muted2:#8a8172;
+  --green:#2e7d3f; --red:#b3402e;
+  --cta:linear-gradient(135deg,#eec77c,#c08c34); --cta-ink:#1a1305;
+  --header-bg:rgba(255,255,255,.86);
+  --glow1:rgba(212,162,74,.12); --glow2:rgba(212,162,74,.05);
+  --shadow:0 24px 50px -28px rgba(110,85,25,.28);
 }
 /* ===== LIGHT MODE = GOLD page, BLACK particles & waves ===== */
-[data-theme="ivory"] body{background:#dcbc7f}
-[data-theme="ivory"] .fxcanvas{filter:brightness(0)}
+[data-theme="ivory"] body{background:#fff}
+[data-theme="ivory"] .fxcanvas{filter:none}
 [data-theme="ivory"] .bgfx{opacity:.95}
 [data-theme="ivory"] .site-header{border-bottom:1px solid rgba(0,0,0,.18)}
 [data-theme="ivory"] .platforms{background:rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.16)}
@@ -74,12 +74,10 @@
 [data-theme="ivory"] .ntable td,[data-theme="ivory"] .ntable td strong{color:#161003}
 [data-theme="ivory"] .badge.neutral{background:rgba(0,0,0,.08);color:var(--muted)}
 [data-theme="ivory"] .step .barline{background:rgba(0,0,0,.18)}
-[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#e2c78e 76%,transparent 77%),conic-gradient(rgba(0,0,0,.18) calc(100% - var(--val)*1%), #1a1206 0)}
+[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#faf7f0 76%,transparent 77%),conic-gradient(rgba(166,124,40,.18) calc(100% - var(--val)*1%), #c08c34 0)}
 [data-theme="ivory"] .m-logo{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.16)}
-[data-theme="ivory"] .site-footer{background:#cfae62;border-top:1px solid rgba(0,0,0,.2)}
+[data-theme="ivory"] .site-footer{background:#faf8f2;border-top:1px solid rgba(0,0,0,.2)}
 [data-theme="ivory"] .vid{background:rgba(0,0,0,.08)}
-/* force ALL text black in light/gold mode (buttons keep gold text) */
-[data-theme="ivory"] *{color:#000 !important;-webkit-text-fill-color:#000 !important}
 [data-theme="ivory"] .btn-gold,[data-theme="ivory"] .btn-gold *,[data-theme="ivory"] .ntable thead .col-us,[data-theme="ivory"] .ntable thead .col-us *{color:var(--cta-ink) !important;-webkit-text-fill-color:var(--cta-ink) !important}
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -206,7 +204,7 @@ em{color:var(--gold-bright);font-style:normal}
   backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line-soft)}
 .hdr{display:flex;align-items:center;gap:28px;height:74px}
 .wordmark{font-size:23px;font-weight:300;letter-spacing:.01em;color:var(--text);white-space:nowrap}
-.wordmark span{color:#cfae62;font-weight:400}
+.wordmark span{color:#faf8f2;font-weight:400}
 .nav{display:flex;gap:28px;margin-inline:auto}
 .nav a{font-size:13.5px;font-weight:400;color:var(--muted);transition:color .15s;position:relative}.nav a:not(:last-child)::after{content:"";position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:1px;height:13px;background:var(--line)}
 .nav a:hover{color:var(--text)}
@@ -410,7 +408,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 
 /* footer */
 .site-footer{background:#030201;border-top:1px solid var(--line-soft);padding:66px 0 32px;position:relative;z-index:1}
-[data-theme="ivory"] .site-footer{background:#cfae62}
+[data-theme="ivory"] .site-footer{background:#faf8f2}
 .f-top{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px}
 @media(max-width:900px){.f-top{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.f-top{grid-template-columns:1fr}}
@@ -503,8 +501,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 .tier-other{opacity:.95}.tier-other .tier-ic{color:var(--muted2)}.tier-other h3{color:var(--text)}.cons{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:10px}.cons li{display:flex;gap:9px;font-size:14px;color:var(--muted);line-height:1.42}.cons li::before{content:"✕";color:var(--red);font-weight:700;flex:0 0 auto}
 [data-theme="ivory"] .theme-switch button[aria-pressed="true"]{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important}
 [data-theme="ivory"] .skip{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important;background:var(--cta)}
-/* ivory: deep-gold accents (inverted from dark mode's gold) */
-[data-theme="ivory"] .eyebrow,[data-theme="ivory"] .adx-eyebrow,[data-theme="ivory"] .fw-eyebrow,[data-theme="ivory"] .kicker,[data-theme="ivory"] em,[data-theme="ivory"] h1 b,[data-theme="ivory"] .hero-center h1 b,[data-theme="ivory"] .wordmark span,[data-theme="ivory"] .brand-tag,[data-theme="ivory"] .tagline,[data-theme="ivory"] .f-col h4,[data-theme="ivory"] .card .more,[data-theme="ivory"] .badge.gold,[data-theme="ivory"] .f-tag,[data-theme="ivory"] .m-item .star,[data-theme="ivory"] .step .num,[data-theme="ivory"] .sc-row .gap,[data-theme="ivory"] .ind-result .kicker,[data-theme="ivory"] .plabel,[data-theme="ivory"] .tier-kicker,[data-theme="ivory"] .quote .stars,[data-theme="ivory"] .ind-cat{color:#46290a!important;-webkit-text-fill-color:#46290a!important}
+[data-theme="ivory"] .dial b{color:#a67c28;text-shadow:none}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Free AI Visibility Score — See How Google & AI Rank You | New Reward", "url": "https://pdrayday.github.io/newreward/score.html", "description": "Get your free 0–100 visibility score across Google and AI — plus a ranked list of the gaps holding you back. No card, no obligation.", "isPartOf": {"@type": "WebSite", "name": "New Reward", "url": "https://pdrayday.github.io/newreward/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pdrayday.github.io/newreward/"}, {"@type": "ListItem", "position": 2, "name": "Free Visibility Score", "item": "https://pdrayday.github.io/newreward/score.html"}]}]}
