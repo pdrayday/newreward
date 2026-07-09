@@ -47,18 +47,18 @@
   --shadow:0 40px 90px -40px rgba(0,0,0,.9);
 }
 [data-theme="ivory"]{color-scheme:dark;
-  --bg:#cda75c; --panel:#d6b36c; --panel2:#c19a40; --field:#d6b36c;
+  --bg:#dcbc7f; --panel:#e2c78e; --panel2:#d4b264; --field:#e2c78e;
   --gold:#1a1206; --gold-bright:#3a2a0b; --gold-deep:#2a1f08;
   --line:rgba(0,0,0,.22); --line-soft:rgba(0,0,0,.12);
   --text:#161003; --muted:#161003; --muted2:#2a2208;
   --green:#1f5a2c; --red:#7a2418;
   --cta:linear-gradient(135deg,#241a06,#0c0802); --cta-ink:#f0d8a0;
-  --header-bg:rgba(205,167,92,.9);
+  --header-bg:rgba(220,188,127,.9);
   --glow1:rgba(0,0,0,.04); --glow2:rgba(0,0,0,.02);
   --shadow:0 24px 50px -28px rgba(60,40,5,.45);
 }
 /* ===== LIGHT MODE = GOLD page, BLACK particles & waves ===== */
-[data-theme="ivory"] body{background:#cda75c}
+[data-theme="ivory"] body{background:#dcbc7f}
 [data-theme="ivory"] .fxcanvas{filter:brightness(0)}
 [data-theme="ivory"] .bgfx{opacity:.95}
 [data-theme="ivory"] .site-header{border-bottom:1px solid rgba(0,0,0,.18)}
@@ -74,9 +74,9 @@
 [data-theme="ivory"] .ntable td,[data-theme="ivory"] .ntable td strong{color:#161003}
 [data-theme="ivory"] .badge.neutral{background:rgba(0,0,0,.08);color:var(--muted)}
 [data-theme="ivory"] .step .barline{background:rgba(0,0,0,.18)}
-[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#d6b36c 76%,transparent 77%),conic-gradient(rgba(0,0,0,.18) calc(100% - var(--val)*1%), #1a1206 0)}
+[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#e2c78e 76%,transparent 77%),conic-gradient(rgba(0,0,0,.18) calc(100% - var(--val)*1%), #1a1206 0)}
 [data-theme="ivory"] .m-logo{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.16)}
-[data-theme="ivory"] .site-footer{background:#bf953a;border-top:1px solid rgba(0,0,0,.2)}
+[data-theme="ivory"] .site-footer{background:#cfae62;border-top:1px solid rgba(0,0,0,.2)}
 [data-theme="ivory"] .vid{background:rgba(0,0,0,.08)}
 /* force ALL text black in light/gold mode (buttons keep gold text) */
 [data-theme="ivory"] *{color:#000 !important;-webkit-text-fill-color:#000 !important}
@@ -201,7 +201,7 @@ em{color:var(--gold-bright);font-style:normal}
   backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line-soft)}
 .hdr{display:flex;align-items:center;gap:28px;height:74px}
 .wordmark{font-size:23px;font-weight:300;letter-spacing:.01em;color:var(--text);white-space:nowrap}
-.wordmark span{color:#bf953a;font-weight:400}
+.wordmark span{color:#cfae62;font-weight:400}
 .nav{display:flex;gap:28px;margin-inline:auto}
 .nav a{font-size:13.5px;font-weight:400;color:var(--muted);transition:color .15s;position:relative}.nav a:not(:last-child)::after{content:"";position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:1px;height:13px;background:var(--line)}
 .nav a:hover{color:var(--text)}
@@ -394,7 +394,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 
 /* footer */
 .site-footer{background:#030201;border-top:1px solid var(--line-soft);padding:66px 0 32px;position:relative;z-index:1}
-[data-theme="ivory"] .site-footer{background:#bf953a}
+[data-theme="ivory"] .site-footer{background:#cfae62}
 .f-top{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px}
 @media(max-width:900px){.f-top{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.f-top{grid-template-columns:1fr}}
@@ -451,7 +451,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 [data-theme="ivory"] .theme-switch button[aria-pressed="true"]{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important}
 [data-theme="ivory"] .skip{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important;background:var(--cta)}
 /* ivory: deep-gold accents (inverted from dark mode's gold) */
-[data-theme="ivory"] .eyebrow,[data-theme="ivory"] .adx-eyebrow,[data-theme="ivory"] .fw-eyebrow,[data-theme="ivory"] .kicker,[data-theme="ivory"] em,[data-theme="ivory"] h1 b,[data-theme="ivory"] .hero-center h1 b,[data-theme="ivory"] .wordmark span,[data-theme="ivory"] .brand-tag,[data-theme="ivory"] .tagline,[data-theme="ivory"] .f-col h4,[data-theme="ivory"] .card .more,[data-theme="ivory"] .badge.gold,[data-theme="ivory"] .f-tag,[data-theme="ivory"] .m-item .star,[data-theme="ivory"] .step .num,[data-theme="ivory"] .sc-row .gap,[data-theme="ivory"] .ind-result .kicker,[data-theme="ivory"] .plabel,[data-theme="ivory"] .tier-kicker,[data-theme="ivory"] .quote .stars,[data-theme="ivory"] .ind-cat{color:#5e3a12!important;-webkit-text-fill-color:#5e3a12!important}
+[data-theme="ivory"] .eyebrow,[data-theme="ivory"] .adx-eyebrow,[data-theme="ivory"] .fw-eyebrow,[data-theme="ivory"] .kicker,[data-theme="ivory"] em,[data-theme="ivory"] h1 b,[data-theme="ivory"] .hero-center h1 b,[data-theme="ivory"] .wordmark span,[data-theme="ivory"] .brand-tag,[data-theme="ivory"] .tagline,[data-theme="ivory"] .f-col h4,[data-theme="ivory"] .card .more,[data-theme="ivory"] .badge.gold,[data-theme="ivory"] .f-tag,[data-theme="ivory"] .m-item .star,[data-theme="ivory"] .step .num,[data-theme="ivory"] .sc-row .gap,[data-theme="ivory"] .ind-result .kicker,[data-theme="ivory"] .plabel,[data-theme="ivory"] .tier-kicker,[data-theme="ivory"] .quote .stars,[data-theme="ivory"] .ind-cat{color:#46290a!important;-webkit-text-fill-color:#46290a!important}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does New Reward do?", "acceptedAnswer": {"@type": "Answer", "text": "We score how you show up in Google and AI answers, fix what holds you back, and show you weekly improvements — one path from gap to growth."}}, {"@type": "Question", "name": "What's the difference between SEO and GEO?", "acceptedAnswer": {"@type": "Answer", "text": "SEO earns rankings in classic Google search. GEO — generative-engine optimization, also called AEO — shapes how AI systems like ChatGPT, Perplexity, Gemini, Claude, and Google's AI Overviews describe and cite your brand. New Reward runs both together."}}, {"@type": "Question", "name": "How is this different from hiring an SEO agency?", "acceptedAnswer": {"@type": "Answer", "text": "Most agencies hand you a recommendations deck and stop, and most don't measure AI answers at all. We do the diagnosis, fix it, and cover Google and AI visibility together — with weekly improvements you can inspect, not a monthly status slide."}}, {"@type": "Question", "name": "How fast will I see results?", "acceptedAnswer": {"@type": "Answer", "text": "Technical and trust fixes land in the first few weeks; ranking, citation, and lead movement compounds over the following months. You see what shipped from day one."}}, {"@type": "Question", "name": "Do you guarantee #1 rankings?", "acceptedAnswer": {"@type": "Answer", "text": "No honest partner can guarantee a specific rank or AI citation — Google and the AI models decide that. We improve your eligibility and show you what improved. What we guarantee: a growth target calibrated to your market and industry — in revenue, not leads — set up front. We claim results only where your data supports it."}}, {"@type": "Question", "name": "How does pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "A fixed monthly fee plus a share of new, attributable revenue above your baseline. If we don't move the number, we don't earn the share. Build a quote in ~2 minutes with our calculator."}}, {"@type": "Question", "name": "What do you need from me to start?", "acceptedAnswer": {"@type": "Answer", "text": "Access to your site, analytics, and the profiles we'll work on (Google Business, listings, review platforms). We confirm each connection before claiming anything is live, and you approve work before it ships."}}, {"@type": "Question", "name": "Do I have to sign a long contract?", "acceptedAnswer": {"@type": "Answer", "text": "No — there are no contracts, period. We do ask that you stay with us for at least 6 months, because SEO and GEO compound over time and the results need that runway to show up."}}, {"@type": "Question", "name": "Can we start with one thing instead of everything?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We’ll recommend the services that fit — and steer you away from the ones that don’t — based on your needs, budget, market, and industry, then expand as results come in."}}]}

@@ -47,18 +47,18 @@
   --shadow:0 40px 90px -40px rgba(0,0,0,.9);
 }
 [data-theme="ivory"]{color-scheme:dark;
-  --bg:#cda75c; --panel:#d6b36c; --panel2:#c19a40; --field:#d6b36c;
+  --bg:#dcbc7f; --panel:#e2c78e; --panel2:#d4b264; --field:#e2c78e;
   --gold:#1a1206; --gold-bright:#3a2a0b; --gold-deep:#2a1f08;
   --line:rgba(0,0,0,.22); --line-soft:rgba(0,0,0,.12);
   --text:#161003; --muted:#161003; --muted2:#2a2208;
   --green:#1f5a2c; --red:#7a2418;
   --cta:linear-gradient(135deg,#241a06,#0c0802); --cta-ink:#f0d8a0;
-  --header-bg:rgba(205,167,92,.9);
+  --header-bg:rgba(220,188,127,.9);
   --glow1:rgba(0,0,0,.04); --glow2:rgba(0,0,0,.02);
   --shadow:0 24px 50px -28px rgba(60,40,5,.45);
 }
 /* ===== LIGHT MODE = GOLD page, BLACK particles & waves ===== */
-[data-theme="ivory"] body{background:#cda75c}
+[data-theme="ivory"] body{background:#dcbc7f}
 [data-theme="ivory"] .fxcanvas{filter:brightness(0)}
 [data-theme="ivory"] .bgfx{opacity:.95}
 [data-theme="ivory"] .site-header{border-bottom:1px solid rgba(0,0,0,.18)}
@@ -74,9 +74,9 @@
 [data-theme="ivory"] .ntable td,[data-theme="ivory"] .ntable td strong{color:#161003}
 [data-theme="ivory"] .badge.neutral{background:rgba(0,0,0,.08);color:var(--muted)}
 [data-theme="ivory"] .step .barline{background:rgba(0,0,0,.18)}
-[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#d6b36c 76%,transparent 77%),conic-gradient(rgba(0,0,0,.18) calc(100% - var(--val)*1%), #1a1206 0)}
+[data-theme="ivory"] .dial{background:radial-gradient(closest-side,#e2c78e 76%,transparent 77%),conic-gradient(rgba(0,0,0,.18) calc(100% - var(--val)*1%), #1a1206 0)}
 [data-theme="ivory"] .m-logo{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.16)}
-[data-theme="ivory"] .site-footer{background:#bf953a;border-top:1px solid rgba(0,0,0,.2)}
+[data-theme="ivory"] .site-footer{background:#cfae62;border-top:1px solid rgba(0,0,0,.2)}
 [data-theme="ivory"] .vid{background:rgba(0,0,0,.08)}
 /* force ALL text black in light/gold mode (buttons keep gold text) */
 [data-theme="ivory"] *{color:#000 !important;-webkit-text-fill-color:#000 !important}
@@ -211,7 +211,7 @@ em{color:var(--gold-bright);font-style:normal}
   backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line-soft)}
 .hdr{display:flex;align-items:center;gap:28px;height:74px}
 .wordmark{font-size:23px;font-weight:300;letter-spacing:.01em;color:var(--text);white-space:nowrap}
-.wordmark span{color:#bf953a;font-weight:400}
+.wordmark span{color:#cfae62;font-weight:400}
 .nav{display:flex;gap:28px;margin-inline:auto}
 .nav a{font-size:13.5px;font-weight:400;color:var(--muted);transition:color .15s;position:relative}.nav a:not(:last-child)::after{content:"";position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:1px;height:13px;background:var(--line)}
 .nav a:hover{color:var(--text)}
@@ -404,7 +404,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 
 /* footer */
 .site-footer{background:#030201;border-top:1px solid var(--line-soft);padding:66px 0 32px;position:relative;z-index:1}
-[data-theme="ivory"] .site-footer{background:#bf953a}
+[data-theme="ivory"] .site-footer{background:#cfae62}
 .f-top{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px}
 @media(max-width:900px){.f-top{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.f-top{grid-template-columns:1fr}}
@@ -463,7 +463,7 @@ a.card:hover,.card.hover:hover{border-color:var(--line);transform:translateY(-3p
 [data-theme="ivory"] .theme-switch button[aria-pressed="true"]{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important}
 [data-theme="ivory"] .skip{color:var(--cta-ink)!important;-webkit-text-fill-color:var(--cta-ink)!important;background:var(--cta)}
 /* ivory: deep-gold accents (inverted from dark mode's gold) */
-[data-theme="ivory"] .eyebrow,[data-theme="ivory"] .adx-eyebrow,[data-theme="ivory"] .fw-eyebrow,[data-theme="ivory"] .kicker,[data-theme="ivory"] em,[data-theme="ivory"] h1 b,[data-theme="ivory"] .hero-center h1 b,[data-theme="ivory"] .wordmark span,[data-theme="ivory"] .brand-tag,[data-theme="ivory"] .tagline,[data-theme="ivory"] .f-col h4,[data-theme="ivory"] .card .more,[data-theme="ivory"] .badge.gold,[data-theme="ivory"] .f-tag,[data-theme="ivory"] .m-item .star,[data-theme="ivory"] .step .num,[data-theme="ivory"] .sc-row .gap,[data-theme="ivory"] .ind-result .kicker,[data-theme="ivory"] .plabel,[data-theme="ivory"] .tier-kicker,[data-theme="ivory"] .quote .stars,[data-theme="ivory"] .ind-cat{color:#5e3a12!important;-webkit-text-fill-color:#5e3a12!important}
+[data-theme="ivory"] .eyebrow,[data-theme="ivory"] .adx-eyebrow,[data-theme="ivory"] .fw-eyebrow,[data-theme="ivory"] .kicker,[data-theme="ivory"] em,[data-theme="ivory"] h1 b,[data-theme="ivory"] .hero-center h1 b,[data-theme="ivory"] .wordmark span,[data-theme="ivory"] .brand-tag,[data-theme="ivory"] .tagline,[data-theme="ivory"] .f-col h4,[data-theme="ivory"] .card .more,[data-theme="ivory"] .badge.gold,[data-theme="ivory"] .f-tag,[data-theme="ivory"] .m-item .star,[data-theme="ivory"] .step .num,[data-theme="ivory"] .sc-row .gap,[data-theme="ivory"] .ind-result .kicker,[data-theme="ivory"] .plabel,[data-theme="ivory"] .tier-kicker,[data-theme="ivory"] .quote .stars,[data-theme="ivory"] .ind-cat{color:#46290a!important;-webkit-text-fill-color:#46290a!important}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "All Offerings — SEO, GEO, Content, Ads & Automation | New Reward", "url": "https://pdrayday.github.io/newreward/all-offerings.html", "description": "Everything New Reward runs across four jobs, plus marketing tuned to your industry — organic search and GEO into compounding ROI.", "isPartOf": {"@type": "WebSite", "name": "New Reward", "url": "https://pdrayday.github.io/newreward/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pdrayday.github.io/newreward/"}, {"@type": "ListItem", "position": 2, "name": "All Offerings", "item": "https://pdrayday.github.io/newreward/all-offerings.html"}]}]}
