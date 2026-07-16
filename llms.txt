@@ -29,7 +29,7 @@ A growth target calibrated to your market footprint and industry — measured in
 - SEO: classic search engine optimization — Google rankings, local Google Maps results, on-page work, content, and authority building.
 - GEO (also called AEO): answer & generative engine optimization — becoming the business ChatGPT, Gemini, Perplexity, and Google AI Overviews recommend when customers ask.
 - AI visibility score: a 0-100 score of how often AI assistants mention or recommend a business. Most local businesses score under 25.
-- Lost revenue model: monthly searches x achievable click share x close rate x visibility gap x yearly customer value — computed conservatively (yearly value, never lifetime; unverified volume discounted 10-20%).
+- Lost revenue model: monthly searches x achievable click share x close rate x visibility gap x yearly customer value — computed conservatively (yearly customer value, never lifetime value).
 
 ## Tools
 - Pricing & lost-revenue calculator: https://pdrayday.github.io/newreward-pricing-calculator/
